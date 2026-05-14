@@ -5,6 +5,7 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "PEPE-HUNT",
   description: "PEPE-HUNT",
+  images: ["public/meta.png"],
   openGraph: {
     title: "PEPE-HUNT",
     description: "PEPE-HUNT",
