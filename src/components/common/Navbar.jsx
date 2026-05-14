@@ -54,9 +54,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Ellipse */}
-                <div className='absolute left-0 top-0'>
-                    <Icons icon={'elipsone'} />
-                </div>
+               
             </div>
 
             {/* Overlay */}

@@ -6,6 +6,9 @@ import Icons from './common/Icons'
 const Headlines = () => {
     return (
         <div>
+             <div className='absolute right-0 mt-20'>
+                <Icons icon={'elipseight'} />
+            </div>
             <div className='py-40 px-4 xl:px-0'>
                 <h2 className='text-center leading-110 mb-12.5 uppercase font-[glo-Heavy] text-5xl text-yellow'>
                     $hPepe is making <span className='text-dark-yellow'>headlines</span>
@@ -30,6 +33,12 @@ const Headlines = () => {
                         )
                     })}
                 </div>
+            </div>
+            <div className='absolute left-0 -mt-100'>
+                <Icons icon={'elipsnine'} />
+            </div>
+             <div className='absolute right-0 mt-20'>
+                <Icons icon={'elipsten'} />
             </div>
         </div>
     )

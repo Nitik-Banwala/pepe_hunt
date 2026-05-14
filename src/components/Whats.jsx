@@ -16,7 +16,7 @@ const Whats = () => {
                             width={72}
                             height={52}
                             alt='logo'
-                            className='w-12 sm:w-16 lg:w-[72px] h-auto' />
+                            className='w-12 sm:w-16 lg:w-[72.1px] h-auto' />
                         <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-dark-yellow'>PEPE HUNT?</h2>
                     </div>
                     <div className="max-w-full lg:max-w-[600.1px]">
@@ -32,20 +32,22 @@ const Whats = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='absolute right-0'>
+                    <Icons icon={'elipsthree'} />
+                </div>
                 <div className='mt-5 flex flex-col items-center lg:items-start w-full lg:w-auto'>
                     <Image
                         src={'/assets/png/pepefull.png'}
                         width={507}
                         height={148}
                         alt='pepe'
-                        className='w-full max-w-xs sm:max-w-sm lg:w-[507px] lg:max-w-none h-auto' />
+                        className='w-full max-w-xs sm:max-w-sm lg:w-[507.1px] lg:max-w-none h-auto' />
                     <Image
                         src={'/assets/png/hunter.png'}
                         width={523}
                         height={523}
                         alt='pepe'
-                        className='-mt-2 w-full max-w-xs sm:max-w-sm lg:w-[523px] lg:max-w-none h-auto' />
+                        className='-mt-2 w-full max-w-xs sm:max-w-sm lg:w-[523.1px] lg:max-w-none h-auto' />
                 </div>
             </div>
 
@@ -57,7 +59,7 @@ const Whats = () => {
                                 key={index}
                                 className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] justify-center p-px rounded-[10px]'>
                                 <div
-                                    className='  group hover:bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] duration-500 cursor-pointer bg-dark text-center w-full flex flex-col items-center justify-center rounded-[10px] min-h-[224px] py-6 lg:py-0'>
+                                    className='  group hover:bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] duration-500 cursor-pointer bg-dark text-center w-full flex flex-col items-center justify-center rounded-[10px] min-h-[224.1px] py-6 lg:py-0'>
                                     {item.svg ? (
                                         <Icons icon={item.svg} />
                                     ) : (

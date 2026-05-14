@@ -27,6 +27,12 @@ const Footer = () => {
                     © {new Date().getFullYear()} $hPEPE. All Rights Reserved.
                 </span>
             </div>
+            <div className='absolute left-0 -mt-210'>
+                <Icons icon={'elipseliven'} />
+            </div>
+            <div className='absolute -mt-210 right-0'>
+                <Icons icon={'elipstwelve'} />
+            </div>
         </section>
     )
 }

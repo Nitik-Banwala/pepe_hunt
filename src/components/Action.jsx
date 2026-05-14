@@ -18,7 +18,7 @@ const Action = () => {
                             width={438}
                             height={500}
                             alt='action'
-                            className='ml-0 sm:ml-10 lg:ml-25 mt-3 w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[438px] h-auto mx-auto lg:mx-0' />
+                            className='ml-0 sm:ml-10 lg:ml-25 mt-3 w-full max-w-[280.1px] sm:max-w-[350.1px] lg:max-w-[438.1px] h-auto mx-auto lg:mx-0' />
                     </div>
                     <div className='w-full min-[1100.1px]:mb-0 mb-6 lg:w-auto flex justify-center lg:justify-end'>
                         <Calender />

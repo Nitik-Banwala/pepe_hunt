@@ -36,7 +36,7 @@ const Calender = () => {
                 />
 
                 {/* Range Labels */}
-                <div className='flex justify-between mb-6 max-w-full sm:max-w-[318px] w-full mx-auto'>
+                <div className='flex justify-between mb-6 max-w-full sm:max-w-[318.1px] w-full mx-auto'>
                     <span className='text-sm sm:text-base text-[#9299B5]'>$100</span>
                     <span className='text-sm sm:text-base text-[#9299B5]'>$150,000</span>
                 </div>

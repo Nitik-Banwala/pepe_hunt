@@ -10,6 +10,9 @@ const Hero = () => {
             <div className='pt-16 px-4 sm:pt-20 lg:pt-[95.1px]'>
 
                 {/* Ellipse — hidden on mobile to avoid overflow */}
+                 <div className='absolute left-0 top-0'>
+                                    <Icons icon={'elipsone'} />
+                                </div>
                 <div className='absolute right-0 hidden lg:block'>
                     <Icons icon={'elipstwo'} />
                 </div>
@@ -134,7 +137,7 @@ const Hero = () => {
                         width={608}
                         height={734}
                         alt='hero'
-                        className='w-full max-w-xs sm:max-w-sm lg:w-[608px] lg:max-w-none h-auto'
+                        className='w-full max-w-xs sm:max-w-sm lg:w-[608.1px] lg:max-w-none h-auto'
                     />
 
                     {/* Presale card */}
