@@ -202,7 +202,7 @@ const Hero = () => {
                                 <div className='flex flex-row mt-1.5 max-w-55 mx-auto gap-2.25 flex-wrap justify-center'>
                                     {IMAGES.map((item, index) => (
                                         <div key={index} className='w-[36.1px] h-[38.1px] bg-yellow rounded-[5px] flex justify-center items-center'>
-                                            <Image src={item.image} width={27} height={27} alt='coins'  className='w-6 h-6s'/>
+                                            <Image src={item.image} width={27} height={27} alt='coins'  className='w-6 h-6'/>
                                         </div>
                                     ))}
                                 </div>
