@@ -6,7 +6,7 @@ const Timer = () => {
         <div>
             <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] min-[1314.1px]:justify-between justify-center items-center flex flex-row flex-wrap px-5.5 max-w-360 w-full mx-auto py-6.5 gap-6 lg:gap-0'>
 
-                <h2 className='text-2xl font-extrabold leading-110 mr-2 uppercase text-yellow lg:ml-5.75 text-center lg:mb-4 mb-0 lg:text-left'>
+                <h2 className='text-2xl inter font-extrabold leading-110 mr-2 uppercase text-yellow lg:ml-5.75 text-center lg:mb-4 mb-0 lg:text-left'>
                     Hurry! next price increase
                 </h2>
 
@@ -14,10 +14,10 @@ const Timer = () => {
 
                     <div className='flex flex-col text-center items-center justify-center'>
                         <div className='flex flex-row sm:w-80 w-60 justify-between ml-3'>
-                            <p className='font-light leading-100 text-sm text-yellow'>Days</p>
-                            <p className='font-light leading-100 text-sm text-yellow'>Hours</p>
-                            <p className='font-light leading-100 text-sm text-yellow'>Minutes</p>
-                            <p className='font-light leading-100 text-sm text-yellow'>Seconds</p>
+                            <p className='font-light leading-100 text-sm inter text-yellow'>Days</p>
+                            <p className='font-light leading-100 text-sm inter text-yellow'>Hours</p>
+                            <p className='font-light leading-100 text-sm inter text-yellow'>Minutes</p>
+                            <p className='font-light leading-100 text-sm inter text-yellow'>Seconds</p>
                         </div>
                         <span className='font-[glo-Heavy] sm:text-custom-6xl text-4xl mt-3 sm:mt-1 text-white leading-100'>
                             08 : 12 : 44 : 28

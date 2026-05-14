@@ -23,13 +23,13 @@ const Team = () => {
                                             alt='team'
                                             className='rounded-full shrink-0' />
                                         <div className='flex flex-col'>
-                                            <p className='uppercase text-yellow leading-212 text-base font-black'>{item.name}</p>
-                                            <p className='text-yellow leading-162 text-base'>{item.role}</p>
+                                            <p className='uppercase text-yellow leading-212 text-base inter font-black'>{item.name}</p>
+                                            <p className='text-yellow leading-162 text-base inter'>{item.role}</p>
                                         </div>
                                     </div>
                                     <Icons icon={'yellowx'} />
                                 </div>
-                                <p className='text-yellow mt-6 leading-185 text-sm'>{item.description}</p>
+                                <p className='text-yellow mt-6 leading-185 text-sm inter'>{item.description}</p>
                             </div>
                         </div>
                     )

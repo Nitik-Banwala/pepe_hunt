@@ -13,12 +13,12 @@ const Social = () => {
     return (
         <>
             <section className="overflow-hidden bg-dark pt-[159.29px] pb-[54.6px]">
-                <div className='absolute left-0'>
+                <div className='absolute left-0  md:block hidden pointer-events-none -z-1'>
                     <Icons icon={'elipsfour'} />
                 </div>
                 {/* Heading */}
                 <div className="mb-12.5 text-center">
-                    <h2 className="text-3xl font-normal uppercase leading-110 text-yellow md:text-[48px]">
+                    <h2 className="text-3xl font-normal font-[glo-Heavy] uppercase leading-110 text-yellow md:text-[48px]">
                         SOCIAL MEDIA IS
                         <span className="text-dark-yellow"> ON FIRE!</span>
                     </h2>
@@ -69,14 +69,14 @@ const Social = () => {
 
                                                 <div>
                                                     <div className="flex items-center gap-1">
-                                                        <h3 className="text-base sm:text-lg leading-100 tracking-[-0.51px] text-yellow font-bold">
+                                                        <h3 className="text-base inter sm:text-lg inter leading-100 tracking-[-0.51px] text-yellow font-bold">
                                                             {item.name}
                                                         </h3>
                                                         <Icons icon={'yellow'} />
 
                                                     </div>
 
-                                                    <p className="text-xs text-gray-300">{item.username}</p>
+                                                    <p className="text-xs inter text-gray-300">{item.username}</p>
                                                 </div>
                                             </div>
 
@@ -85,12 +85,12 @@ const Social = () => {
                                             </div>
                                         </div>
                                         <div className="space-y-4 mt-3.75 sm:mt-4.25">
-                                            <p className="text-lg sm:text-xl leading-100 font-medium text-yellow">
+                                            <p className="text-lg inter sm:text-xl inter leading-100 font-medium text-yellow">
                                                 {item.text1}
                                                 <span className="text-dark-yellow">{item.highlight}</span>
                                             </p>
 
-                                            <p className="text-lg sm:text-xl text-yellow leading-100 font-medium">
+                                            <p className="text-lg inter sm:text-xl inter text-yellow leading-100 font-medium">
                                                 <span className="text-dark-yellow">{item.highlight2}</span>
                                                 {item.text2}
                                             </p>
@@ -139,7 +139,7 @@ const Social = () => {
                     </Swiper>
                 </div>
             </section>
-             <div className='absolute right-0 -mt-100'>
+             <div className='absolute right-0 md:block hidden pointer-events-none -mt-100'>
                 <Icons icon={'elipsfive'} />
             </div>
             <Timer />

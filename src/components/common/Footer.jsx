@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="max-w-[1141.1px] w-full mx-auto flex flex-col">
                 <div className="w-full border-y border-[#F7F7F7] pt-[19.1px] pb-[22.1px] flex items-center justify-center sm:justify-between">
                     <div className="flex items-center gap-10">
-                        <Link href="#" className="w-[30.1px] font-semibold text-base leading-[26.1px] text-[#FFFFFF]">
+                        <Link href="#" className="w-[30.1px] font-semibold text-base inter leading-[26.1px] text-white">
                             ToS
                         </Link>
-                        <Link href="#" className="w-[109.1px] font-semibold text-base leading-[26.1px] text-[#FFFFFF]">
+                        <Link href="#" className="w-[109.1px] font-semibold text-base inter leading-[26.1px] text-white">
                             Privacy Policy
                         </Link>
                     </div>
@@ -23,14 +23,14 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <span className="w-full text-center sm:text-left font-semibold text-base leading-[26.1px] text-[#FFFFFF] mt-5 mb-[23.29px]">
+                <span className="w-full text-center sm:text-left font-semibold text-base inter leading-[26.1px] text-white mt-5 mb-[23.29px]">
                     © {new Date().getFullYear()} $hPEPE. All Rights Reserved.
                 </span>
             </div>
-            <div className='absolute left-0 -mt-210'>
+            <div className='absolute left-0  md:block hidden pointer-events-none  -mt-210'>
                 <Icons icon={'elipseliven'} />
             </div>
-            <div className='absolute -mt-210 right-0'>
+            <div className='absolute -mt-210  md:block hidden pointer-events-none  right-0'>
                 <Icons icon={'elipstwelve'} />
             </div>
         </section>

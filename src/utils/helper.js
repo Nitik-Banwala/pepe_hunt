@@ -108,7 +108,7 @@ export const IMAGES = [
     },
     {
         id: '3',
-        image: '/assets/svg/dmd.svg'
+        image: '/assets/png/dimand.png'
     },
     {
         id: '4',

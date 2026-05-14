@@ -26,7 +26,7 @@ const Headlines = () => {
                                         className='w-full h-auto' />
                                 </div>
                                 <div className='bg-white/10 py-2 px-3 flex flex-col justify-between max-w-[276.1px] w-full min-h-[142.1px] mx-auto'>
-                                    <p className='text-base leading-166 text-white font-bold'>{item.description}</p>
+                                    <p className='text-base inter leading-166 text-white font-bold'>{item.description}</p>
                                     <Icons icon={item.logo} />
                                 </div>
                             </div>
@@ -34,10 +34,10 @@ const Headlines = () => {
                     })}
                 </div>
             </div>
-            <div className='absolute left-0 -mt-100'>
+            <div className='absolute md:block hidden pointer-events-none left-0 -mt-100'>
                 <Icons icon={'elipsnine'} />
             </div>
-             <div className='absolute right-0 mt-20'>
+             <div className='absolute md:block hidden pointer-events-none right-0 mt-20'>
                 <Icons icon={'elipsten'} />
             </div>
         </div>

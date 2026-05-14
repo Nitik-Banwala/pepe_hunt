@@ -20,8 +20,8 @@ const Frogs = () => {
                 <div className='max-w-285 mx-auto lg:px-0'>
                     <div className='max-w-full lg:max-w-[565.1px]'>
                         <h2 className='text-yellow leading-110 text-3xl sm:text-4xl lg:text-5xl uppercase font-[glo-Heavy]'>Frogs are warming up</h2>
-                        <h3 className='text-yellow leading-110 mt-2.25 text-lg sm:text-xl lg:text-2xl inter font-black uppercase'>Preview the Platform That's About to Break Crypto</h3>
-                        <p className='text-yellow text-base sm:text-lg lg:text-xl mb-8 sm:mb-10 lg:mb-12.5 mt-2.75 leading-150 inter font-normal'>
+                        <h3 className='text-yellow leading-110 mt-2.25 text-lg inter sm:text-xl inter lg:text-2xl inter inter font-black uppercase'>Preview the Platform That's About to Break Crypto</h3>
+                        <p className='text-yellow text-base inter sm:text-lg inter lg:text-xl inter mb-8 sm:mb-10 lg:mb-12.5 mt-2.75 leading-150 inter font-normal'>
                             Demo of how it works: real frogs, real-time action, and soon <br className='hidden sm:block' />—real bets. When it's live, bets are on, bugs get eaten, and $hPEPE skyrockets.
                         </p>
                     </div>

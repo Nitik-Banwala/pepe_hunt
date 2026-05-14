@@ -6,15 +6,15 @@ import Icons from './common/Icons'
 const Roadmap = () => {
     return (
         <section className='bg-[#16003D] pt-[268.1px] pb-[92.1px] px-4 overflow-hidden'>
-             <div className='absolute left-0 -mt-100'>
+             <div className='absolute left-0 md:block hidden pointer-events-none -mt-100'>
                 <Icons icon={'elipssix'} />
             </div> 
-            <div className='absolute right-0 -mt-100'>
+            <div className='absolute right-0 md:block hidden pointer-events-none -mt-100'>
                 <Icons icon={'elipsseven'} />
             </div>
             <div className='max-w-285 mx-auto w-full'>
 
-                <h2 className='text-yellow text-center text-5xl font-[glo-Heavy] leading-100 uppercase mb-[92.1px]'>
+                <h2 className='text-yellow data-aos="fade-up" text-center text-5xl font-[glo-Heavy] leading-100 uppercase mb-[92.1px]'>
                     OUR ROADMAP
                 </h2>
 
@@ -68,7 +68,7 @@ const Roadmap = () => {
                                                 <Icons icon={'pending'} />
                                             )}
 
-                                            <span className='text-yellow text-[16px] font-semibold leading-130 max-w-[270.1px]'>
+                                            <span className='text-yellow text-base inter font-semibold leading-130 max-w-[270.1px]'>
                                                 {item.text}
                                             </span>
                                         </div>

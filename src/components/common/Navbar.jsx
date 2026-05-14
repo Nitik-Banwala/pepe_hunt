@@ -82,7 +82,7 @@ const Navbar = () => {
                 <div className='flex flex-col items-center gap-8 pt-10'>
                     <Link
                         href="#"
-                        className='text-yellow text-base font-medium'
+                        className='text-yellow text-base inter font-medium'
                         onClick={() => setMenuOpen(false)}
                     >
                         User Portal

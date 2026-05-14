@@ -24,7 +24,7 @@ const Whats = () => {
                             {PEPE_HUNT_CONTENT.map((item) => (
                                 <p
                                     key={item.id}
-                                    className="text-base sm:text-lg lg:text-xl leading-150 text-yellow mb-3.75"
+                                    className="text-base inter sm:text-lg inter lg:text-xl inter leading-150 text-yellow mb-3.75"
                                 >
                                     {item.content}
                                 </p>
@@ -32,7 +32,7 @@ const Whats = () => {
                         </div>
                     </div>
                 </div>
-                <div className='absolute right-0'>
+                <div className='absolute right-0 md:block hidden pointer-events-none -z-1'>
                     <Icons icon={'elipsthree'} />
                 </div>
                 <div className='mt-5 flex flex-col items-center lg:items-start w-full lg:w-auto'>
@@ -70,8 +70,8 @@ const Whats = () => {
                                             alt='image'
                                         />
                                     )}
-                                    <h3 className='text-yellow mt-6 text-base font-extrabold leading-130'>{item.title}</h3>
-                                    <p className='max-w-[300.1px] mt-1 text-base font-normal leading-130 text-yellow/80'>{item.description}</p>
+                                    <h3 className='text-yellow mt-6 text-base inter font-extrabold leading-130'>{item.title}</h3>
+                                    <p className='max-w-[300.1px] mt-1 text-base inter font-normal leading-130 text-yellow/80'>{item.description}</p>
                                 </div>
                             </div>
                         )
