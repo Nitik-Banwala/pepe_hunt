@@ -1,41 +1,31 @@
 "use client"
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
-import 'swiper/css'
-import Image from 'next/image'
+import Marquee from "react-fast-marquee"
 import { FEATURED_DATA } from '@/utils/helper'
 import Icons from './common/Icons'
 
-
 const Featured = () => {
     return (
-        <div className='bg-dark mt-22.5'>
-            <h2 className='text-center text-2xl inter leading-110 font-[glo-Heavy] mb-9.5 text-yellow uppercase '>
+        <div className='bg-dark mt-22.5 overflow-hidden'>
+            <h2 className='text-center text-2xl inter leading-110 font-[glo-Heavy] mb-9.5 text-yellow uppercase'>
                 Featured On
             </h2>
 
-            <Swiper
-                modules={[Autoplay]}
-                slidesPerView={'auto'}
-                spaceBetween={60}
-                loop={true}
-                speed={4000}
-                autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false,
-                }}
-                allowTouchMove={true}
-                className='ease-linear!'
+            <Marquee
+                speed={100}
+                gradient={false}
+                pauseOnHover={false}
+                direction="left"
             >
                 {[...FEATURED_DATA, ...FEATURED_DATA].map((item, i) => (
-                    <SwiperSlide key={i} className='w-auto! flex items-center justify-center'>
-                        <div className='flex items-center w-full cursor-grab justify-center '>
-                            <Icons icon={item.src}/>
-                        </div>
-                    </SwiperSlide>
+                    <div
+                        key={i}
+                        className='flex items-center justify-center mr-[60px]'
+                    >
+                        <Icons icon={item.src} />
+                    </div>
                 ))}
-            </Swiper>
+            </Marquee>
         </div>
     )
 }

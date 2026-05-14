@@ -70,3 +70,7 @@
   --leading-183: 183%;
   --leading-200: 200%;
 }
+
+.featured-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}

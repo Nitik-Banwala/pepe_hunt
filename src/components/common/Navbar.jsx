@@ -53,7 +53,6 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Ellipse */}
                
             </div>
 
