@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Action = () => {
     return (
         <>
-            <div className='max-w-285 w-full mt-16 sm:mt-36 lg:mt-[265.1px] mx-auto px-4'>
+            <div className='max-w-285 w-full mt-16 md:mt-36 lg:mt-[265.1px] mx-auto px-4'>
                 <div className='flex flex-col min-[1100.1px]:flex-row w-full max-[1100.1px]:max-w-[550.1px] mx-auto lg:justify-between items-center lg:items-start '>
                     <div className='w-full lg:w-auto '>
                         <h2 className='leading-110 max-w-full lg:max-w-[465.1px] uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-yellow text-center lg:text-left'>

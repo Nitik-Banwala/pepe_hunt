@@ -6,7 +6,7 @@ function Tokenomics() {
 
 
     return (
-        <div className='pt-[198.14px] bg-dark'>
+        <div className=' md:pt-[198.14px] pt-[59.29px] bg-dark'>
             <div className='max-w-[1135.72px] mx-auto max-[1350px]:px-4 w-full'>
                 <div className='flex min-[1000px]:flex-row flex-col items-center max-[1000px]:gap-6 min-[1000px]:justify-between w-full'>
                     <div className='max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-sm:w-full'>

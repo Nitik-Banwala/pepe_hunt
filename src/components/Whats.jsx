@@ -7,7 +7,7 @@ import Icons from './common/Icons'
 const Whats = () => {
     return (
         <div className='px-4'>
-            <div className='max-w-285 flex flex-col gap-3 lg:flex-row mx-auto w-full pt-20 sm:pt-32 lg:pt-45 '>
+            <div className='max-w-285 flex flex-col gap-3 lg:flex-row mx-auto w-full pt-15 sm:pt-32 lg:pt-45 '>
                 <div className='w-full lg:w-auto'>
                     <div className='flex flex-row items-center mb-5 flex-wrap gap-y-2'>
                         <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-yellow'>What is</h2>

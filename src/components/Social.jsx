@@ -8,7 +8,7 @@ import Icons from "./common/Icons";
 const Social = () => {
     return (
         <>
-            <section className="overflow-hidden bg-dark pt-[159.29px] pb-[54.6px] relative">
+            <section className="overflow-hidden bg-dark pt-[59.29px] md:pt-[159.29px] pb-[54.6px] relative">
                 <div className='absolute left-0 md:block hidden pointer-events-none -z-1'>
                     <Icons icon={'elipsfour'} />
                 </div>
@@ -31,7 +31,7 @@ const Social = () => {
                     {TWEETS.map((item) => (
                         <div
                             key={item.id}
-                            className="rounded-2xl flex flex-col justify-between h-129 sm:h-[558.4px] bg-[#FFFFFF1A] px-2.75 py-3.5 sm:py-4 text-white w-[320px] sm:w-[360px] lg:w-[390px] mr-[19.6px]"
+                            className="rounded-2xl flex flex-col justify-between h-129 sm:h-[558.4px] bg-[#FFFFFF1A] px-2.75 py-3.5 sm:py-4 text-white w-[320px] sm:w-[360.1px] lg:w-[390.1px] mr-[19.6px]"
                         >
                             {/* Top */}
                             <div className="mb-5 flex flex-col items-start justify-between gap-3">

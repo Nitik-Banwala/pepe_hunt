@@ -5,7 +5,7 @@ import Icons from './common/Icons'
 
 const Roadmap = () => {
     return (
-        <section className='bg-[#16003D] pt-[268.1px] px-4 overflow-hidden'>
+        <section className='bg-[#16003D] pt-[59.29px] md:pt-[268.1px] px-4 overflow-hidden'>
             <div className='absolute left-0 md:block hidden pointer-events-none -mt-180'>
                 <Icons icon={'elipssix'} />
             </div>

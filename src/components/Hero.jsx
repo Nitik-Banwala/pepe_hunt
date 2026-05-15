@@ -71,22 +71,22 @@ const Hero = () => {
                     <samp className='text-dark-yellow font-[glo-Heavy]'> The First Live-Streamed Frog Chaos</samp>
                 </h1>
 
-                <div className='min-[1200.1px]:hidden flex flex-col w-full lg:w-auto items-center'>
+                <div className='min-[1200.1px]:hidden mt-3 flex flex-col w-full lg:w-auto items-center'>
                     <div className='p-px bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] flex justify-center mt-4 w-fit rounded-2xl h-fit relative'>
                         <div className='w-[183.1px] h-[33.1px] rounded-3xl bg-dark-yellow absolute -mt-4 flex items-center justify-center'>
                             <a className='text-light-blue leading-110 text-sm inter font-bold'>1 $hPEPE = 0.009 USD</a>
                         </div>
                         <div className="bg-[url(/assets/png/Card.png)] text-center px-4 rounded-2xl sm:px-7 bg-cover bg-no-repeat bg-center w-full max-w-[509.1px] ">
-                            <h3 className='uppercase font-black text-yellow text-xl inter leading-110 pt-8'>Early Frogs Catch The Gains</h3>
-                            <p className='mt-2.5 text-dark-yellow text-base inter leading-180'>Get in on the ground floor for a 20x gain on launch.</p>
-                            <p className='text-yellow max-w-[449.1px] text-sm inter leading-144 mt-5'>You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</p>
+                            <h3 className='uppercase font-black text-yellow text-sm sm:text-xl inter leading-110 pt-8'>Early Frogs Catch The Gains</h3>
+                            <p className='mt-2.5 text-dark-yellow text-xs sm:text-base inter leading-180'>Get in on the ground floor for a 20x gain on launch.</p>
+                            <p className='text-yellow max-w-[449.1px] text-xs sm:text-sm inter leading-144 mt-1 sm:mt-5'>You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</p>
 
                             {/* Progress bar */}
-                            <div className='flex mt-6 flex-row w-full max-w-108 justify-between items-center flex-wrap gap-2'>
-                                <div className='bg-white rounded-[63px] w-full h-4 max-w-[243.1px]'>
-                                    <div className='h-4 rounded-[63px] w-[130.1px] bg-light-blue'></div>
+                            <div className='flex mt-6 flex-row w-full max-w-108 justify-between items-center gsp-1 sm:gap-2'>
+                                <div className='bg-white rounded-[63px] w-full sm:h-4 h-3 sm:max-w-[243.1px] max-w-[180.1px] '>
+                                    <div className='sm:h-4 h-3 rounded-[63px] w-full sm:max-w-[130.1px] max-w-[95.1px] bg-light-blue'></div>
                                 </div>
-                                <p className='text-yellow font-black text-sm inter leading-110 uppercase'>USD RAISED: <span className='text-greenry'>$5,318,343</span></p>
+                                <p className='text-yellow font-black text-sm text-[10px] inter leading-110 uppercase'>USD RAISED: <span className='text-greenry'>$5,318,343</span></p>
                             </div>
 
                             {/* Input fields */}
@@ -316,7 +316,7 @@ const Hero = () => {
                 {/* Countdown banner */}
 
             </div>
-            <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[234.1px] mx-auto mt-8 lg:mt-0'>
+            <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[234.1px] mx-auto sm:mt-8 lg:mt-0'>
                 <div className='max-w-360 mx-auto'>
                     <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>
                         Hurry! next price increase
