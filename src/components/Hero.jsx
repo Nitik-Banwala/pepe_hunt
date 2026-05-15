@@ -61,7 +61,7 @@ const Hero = () => {
 
                 {/* Banner pill */}
                 <div className="
-                max-w-[434.1px] mx-auto h-7.5 w-full mt-8.25 uppercase bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] text-yellow rounded-[22px] flex justify-center items-center text-xs inter sm:text-sm inter px-3 text-center">
+                max-w-[434.1px] mx-auto h-7.5 w-full mt-8.25 uppercase bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] text-yellow rounded-[22px] flex justify-center font-bold tracking-[1px] items-center text-xs inter sm:text-sm inter px-3 text-center">
                     Buy, Hold, and Play for 125% Yearly Gain
                 </div>
 
@@ -176,7 +176,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Feature cards */}
-                <div className='flex flex-row flex-wrap mt-8 mx-auto max-w-240 justify-center lg:justify-between w-full gap-3 lg:gap-0 px-4 sm:px-6 lg:px-0'>
+                <div className='flex flex-row flex-wrap mt-8 mx-auto max-w-235.5 justify-center lg:justify-between w-full gap-3 lg:gap-0 px-4 sm:px-6 lg:px-0'>
                     {FEATURES_DATA.map((item, index) => {
                         return (
                             <div key={index} className='flex flex-row flex-wrap'>
@@ -186,7 +186,7 @@ const Hero = () => {
                                             <Icons icon={item.icon} />
                                         </div>
                                         <div className=''>
-                                            <h3 className='text-xs inter font- text-yellow leading-130'>{item.title}</h3>
+                                            <h3 className='text-xs inter font-extrabold text-yellow leading-130'>{item.title}</h3>
                                             <p className='text-xs inter mt-1.25 text-yellow/80 leading-130'>{item.description}</p>
                                         </div>
                                     </div>
@@ -216,7 +216,7 @@ const Hero = () => {
                             </div>
                             <div className="bg-[url(/assets/png/Card.png)] text-center px-4 sm:px-5 rounded-2xl bg-cover bg-no-repeat bg-center w-full max-w-[509.1px] min-h-[530.1px]">
                                 <h3 className='uppercase font-black text-yellow text-xl inter leading-110 pt-8'>Early Frogs Catch The Gains</h3>
-                                <p className='mt-2.5 text-dark-yellow text-base inter leading-180'>Get in on the ground floor for a 20x gain on launch.</p>
+                                <p className='mt-2.5 text-dark-yellow text-base inter font-bold leading-180'>Get in on the ground floor for a 20x gain on launch.</p>
                                 <p className='text-yellow max-w-[449.1px] text-sm inter leading-144 mt-5'>You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</p>
 
                                 {/* Progress bar */}

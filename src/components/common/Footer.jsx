@@ -18,9 +18,25 @@ const Footer = () => {
                     </div>
 
                     <div className="hidden sm:flex items-center gap-5">
-                        <Link href="#"> <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'telegram'} /></div></Link>
-                        <Link href="#"> <div className='w-11.25 h-11.25 group border hover:bg-yellow duration-500 rounded-full border-yellow flex justify-center items-center'><Icons icon={'twiter'} /></div></Link>
+                        <Link
+                            href="https://t.me/yourtelegramusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"telegram"} />
+                            </div>
+                        </Link>
 
+                        <Link
+                            href="https://twitter.com/yourtwitterusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 group hover:bg-yellow duration-500 h-11.25 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"twiter"} />
+                            </div>
+                        </Link>
                     </div>
                 </div>
 

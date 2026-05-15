@@ -2,6 +2,7 @@ import React from 'react'
 import { TEAM_DATA } from '@/utils/helper'
 import Image from 'next/image'
 import Icons from './common/Icons'
+import Link from 'next/link'
 
 const Team = () => {
     return (
@@ -27,7 +28,14 @@ const Team = () => {
                                             <p className='text-yellow leading-162 text-base inter'>{item.role}</p>
                                         </div>
                                     </div>
-                                    <Icons icon={'yellowx'} />
+                                    <Link
+                                        href="https://twitter.com/yourtwitterusername"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='cursor-pointer'
+                                    >
+                                        <Icons icon={"yellowx"} />
+                                    </Link>
                                 </div>
                                 <p className='text-yellow mt-6 leading-185 text-sm inter'>{item.description}</p>
                             </div>

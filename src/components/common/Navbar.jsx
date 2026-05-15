@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Link href="#">
                         <div className='flex items-center gap-1.5 flex-row'>
 
-                            <Image
+                            <Image sizes='100vw'
                                 src={'/assets/png/froglogo.png'}
                                 width={225.8}
                                 height={54}
@@ -28,8 +28,25 @@ const Navbar = () => {
                     {/* Desktop Nav */}
                     <div className='hidden md:flex flex-row items-center'>
                         <Link href="#" className='text-yellow mr-6 leading-80 text-base inter font-medium'>  User Portal</Link>
-                        <Link href="#"> <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'telegram'} /></div></Link>
-                        <Link href="#"><div className='w-11.25 group hover:bg-yellow duration-500 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'twiter'} /></div> </Link>
+                        <Link
+                            href="https://t.me/yourtelegramusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"telegram"} />
+                            </div>
+                        </Link>
+
+                        <Link
+                            href="https://twitter.com/yourtwitterusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 group hover:bg-yellow duration-500 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"twiter"} />
+                            </div>
+                        </Link>
                     </div>
 
                     {/* Hamburger Button */}
@@ -78,14 +95,23 @@ const Navbar = () => {
                         User Portal
                     </Link>
                     <div className='flex flex-row items-center gap-5'>
-                        <Link href="#" onClick={() => setMenuOpen(false)}>
-                            <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'>
-                                <Icons icon={'telegram'} />
+                        <Link
+                            href="https://t.me/yourtelegramusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"telegram"} />
                             </div>
                         </Link>
-                        <Link href="#" onClick={() => setMenuOpen(false)}>
-                            <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'>
-                                <Icons icon={'twiter'} />
+
+                        <Link
+                            href="https://twitter.com/yourtwitterusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-11.25 group hover:bg-yellow duration-500 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center">
+                                <Icons icon={"twiter"} />
                             </div>
                         </Link>
                     </div>

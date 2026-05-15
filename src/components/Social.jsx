@@ -9,8 +9,9 @@ const Social = () => {
     return (
         <>
             <section className="overflow-hidden bg-dark pt-[59.29px] md:pt-[159.29px] pb-[54.6px] relative">
-                <div className='absolute left-0 md:block hidden pointer-events-none -z-1'>
+                <div className='absolute left-0 md:block hidden pointer-events-none '>
                     <Icons icon={'elipsfour'} />
+                 
                 </div>
 
                 {/* Heading */}
@@ -127,7 +128,7 @@ const Social = () => {
                 </Marquee>
             </section>
 
-            <div className='absolute right-0 md:block hidden pointer-events-none -mt-100'>
+            <div className='absolute right-0 md:block hidden pointer-events-none -mt-150'>
                 <Icons icon={'elipsfive'} />
             </div>
 
