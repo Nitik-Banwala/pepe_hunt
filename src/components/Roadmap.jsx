@@ -5,7 +5,7 @@ import Icons from './common/Icons'
 
 const Roadmap = () => {
     return (
-        <section className='bg-[#16003D] pt-[59.29px] md:pt-[268.1px] px-4 overflow-hidden'>
+        <section className='bg-whithy pt-[59.29px] md:pt-[268.1px] px-4 overflow-hidden'>
             <div className='absolute left-0 md:block hidden pointer-events-none -mt-180'>
                 <Icons icon={'elipssix'} />
             </div>
@@ -58,7 +58,7 @@ const Roadmap = () => {
                                     {phase.items.map((item, i) => (
                                         <div
                                             key={i}
-                                            className='w-[311.1px] h-[63.1px] rounded-xl bg-[#2A1657] px-5 flex items-center gap-4'
+                                            className='w-[311.1px] h-[63.1px] rounded-xl bg-darkest px-5 flex items-center gap-4'
                                         >
                                             {item.status === "completed" ? (
                                                 <Icons icon={'checkicon'} />

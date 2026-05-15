@@ -32,7 +32,7 @@ const Social = () => {
                     {TWEETS.map((item) => (
                         <div
                             key={item.id}
-                            className="rounded-2xl flex flex-col justify-between h-129 sm:h-[558.4px] bg-[#FFFFFF1A] px-2.75 py-3.5 sm:py-4 text-white w-[320px] sm:w-[360.1px] lg:w-[390.1px] mr-[19.6px]"
+                            className="rounded-2xl flex flex-col justify-between h-129 sm:h-[558.4px] bg-light-gray px-2.75 py-3.5 sm:py-4 text-white w-[320px] sm:w-[360.1px] lg:w-[390.1px] mr-[19.6px]"
                         >
                             {/* Top */}
                             <div className="mb-5 flex flex-col items-start justify-between gap-3">
@@ -61,7 +61,7 @@ const Social = () => {
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center justify-center rounded-full bg-[#f5ff1f] w-[111.2px] h-7 text-[11px] font-bold text-black">
+                                    <div className="flex items-center justify-center rounded-full bg-dark-yellow w-[111.2px] h-7 text-[11px] font-bold text-black">
                                         {item.followers}
                                     </div>
                                 </div>

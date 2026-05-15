@@ -23,7 +23,7 @@ const FAQ = () => {
             <div key={item.id} className="faqitem">
               <button
                 onClick={() => toggle(item.id)}
-                className={`max-w-[1141.1px] w-full mx-auto  ${openId === item.id ? "" : "border-b border-[#FFFFFF]"
+                className={`max-w-[1141.1px] w-full mx-auto  ${openId === item.id ? "" : "border-b border-white"
                   }  flex items-center justify-between cursor-pointer pb-[14.6px] min-[500px]:pb-[29.1px] pt-[14.42px] min-[500px]:pt-[25.1px] pr-[11.48px] min-[500px]:pr-[35.55px] gap-4`}
               >
                 <h1 className="w-full font-semibold text-base inter sm:text-base inter lg:text-xl inter leading-[28.1px] sm:leading-[34.1px] text-white text-left mb-0">

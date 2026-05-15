@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <section className="px-5 bg-dark pt-[40.1px] sm:pt-[70.1px] md:pt-[100.1px] lg:pt-[126.1px]">
             <div className="max-w-[1141.1px] w-full mx-auto flex flex-col">
-                <div className="w-full border-y border-[#F7F7F7] pt-[19.1px] pb-[22.1px] flex items-center justify-center sm:justify-between">
+                <div className="w-full border-y border-blacky pt-[19.1px] pb-[22.1px] flex items-center justify-center sm:justify-between">
                     <div className="flex items-center gap-10">
                         <Link href="#" className="w-[30.1px] font-semibold text-base inter leading-[26.1px] text-white">
                             ToS

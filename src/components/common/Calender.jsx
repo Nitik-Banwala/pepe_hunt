@@ -37,8 +37,8 @@ const Calender = () => {
 
                 {/* Range Labels */}
                 <div className='flex justify-between mb-6 max-w-full sm:max-w-[318.1px] w-full mx-auto'>
-                    <span className='text-sm sm:text-base poppins text-[#9299B5]'>$100</span>
-                    <span className='text-sm sm:text-base poppins text-[#9299B5]'>$150,000</span>
+                    <span className='text-sm sm:text-base poppins text-dark-gray'>$100</span>
+                    <span className='text-sm sm:text-base poppins text-dark-gray'>$150,000</span>
                 </div>
 
                 {/* Tokens Burned */}
@@ -59,7 +59,7 @@ const Calender = () => {
                     </span>
                 </div>
 
-                <div className='border border-[#2d2060] rounded-[10px] py-5 sm:py-6 px-3 sm:px-4'>
+                <div className='border border-dark rounded-[10px] py-5 sm:py-6 px-3 sm:px-4'>
                     <p className='text-sm inter sm:text-base inter font-bold text-white tracking-widest uppercase mb-2.5'>
                         How it works:
                     </p>
