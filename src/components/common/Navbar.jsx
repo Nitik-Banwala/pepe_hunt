@@ -17,12 +17,11 @@ const Navbar = () => {
                         <div className='flex items-center gap-1.5 flex-row'>
 
                             <Image
-                                src={'/assets/png/nav.png'}
-                                width={74}
+                                src={'/assets/png/froglogo.png'}
+                                width={225.8}
                                 height={54}
                                 alt='logo' />
 
-                            <Icons icon={'logo'} />
                         </div>
                     </Link>
 
