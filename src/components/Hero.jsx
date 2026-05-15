@@ -316,7 +316,7 @@ const Hero = () => {
                 {/* Countdown banner */}
 
             </div>
-            <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[234.1px] mx-auto sm:mt-8 lg:mt-0'>
+            <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[234.1px] mx-auto '>
                 <div className='max-w-360 mx-auto'>
                     <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>
                         Hurry! next price increase

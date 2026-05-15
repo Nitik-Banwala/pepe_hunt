@@ -10,24 +10,32 @@ const Whats = () => {
             <div className='max-w-285 flex flex-col gap-3 lg:flex-row mx-auto w-full pt-15 sm:pt-32 lg:pt-45 '>
                 <div className='w-full lg:w-auto'>
                     <div className='flex flex-row items-center mb-5 flex-wrap gap-y-2'>
-                        <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-yellow'>What is</h2>
+                        <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-yellow'>
+                            What is
+                        </h2>
+
                         <Image
                             src={'/assets/png/nav.png'}
                             width={72}
                             height={52}
                             alt='logo'
-                            className='w-12 sm:w-16 lg:w-[72.1px] mx-3 h-auto' />
-                        <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-dark-yellow'>PEPE HUNT?</h2>
+                            className='w-12 sm:w-16 lg:w-[72.1px] mx-3 h-auto'
+                        />
+
+                        <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-dark-yellow'>
+                            PEPE HUNT?
+                        </h2>
                     </div>
-                    <div className="max-w-full lg:max-w-[600.1px]">
-                        <div className="max-w-full lg:max-w-[660.1px]">
+
+                    <div className="w-full lg:max-w-[600.1px]">
+                        <div className="w-full lg:max-w-[660.1px]">
                             {PEPE_HUNT_CONTENT.map((item) => (
-                                <p
-                                    key={item.id}
-                                    className="text-base inter sm:text-lg inter lg:text-xl inter leading-150 text-yellow mb-3.75"
-                                >
-                                    {item.content}
-                                </p>
+                               <p
+    key={item.id}
+    className="text-base sm:text-lg lg:text-xl leading-150 text-yellow mb-3.75 whitespace-normal lg:whitespace-pre-line"
+>
+    {item.content}
+</p>
                             ))}
                         </div>
                     </div>

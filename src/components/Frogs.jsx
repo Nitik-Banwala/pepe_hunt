@@ -7,7 +7,7 @@ const Frogs = () => {
             <div className='bg-light-green pt-14 sm:pt-20 lg:pt-28.5 mt-16 sm:mt-24 px-4 lg:mt-32.5 max-w-360 w-full mx-auto relative overflow-hidden'>
 
                 {/* Frog: hidden on mobile/tablet, shown absolutely on desktop */}
-                <div className='hidden lg:block absolute translate-y-[-8%] translate-x-[123%]'>
+                <div className='hidden lg:block absolute translate-y-[-8%] xl:translate-x-[123%] translate-x-[90%]'>
                     <Image
                         src={'/assets/png/frog.png'}
                         width={647}
@@ -27,13 +27,13 @@ const Frogs = () => {
                     </div>
 
                     {/* Frog visible on mobile/tablet, stacked in flow */}
-                    <div className='lg:hidden w-full flex justify-end mb-6 ml-4'>
+                    <div className='lg:hidden w-full flex justify-center mb-6 ml-4'>
                         <Image
                             src={'/assets/png/frog.png'}
                             width={647}
                             height={431}
                             alt='pepe2'
-                            className='w-full max-w-xs max-h-[431.1px] sm:max-w-sm object-contain'
+                            className='w-full max-w-[647.1px] max-h-[431.1px] sm:max-w-sm object-contain'
                         />
                     </div>
                 </div>

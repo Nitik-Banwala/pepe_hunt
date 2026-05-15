@@ -32,6 +32,7 @@ function Tokenomics() {
                         height={498}
                         alt="tokenomics-image"
                         className='w-full h-full max-w-[450.1px] max-h-[498.1px] min-w-0' />
+                        
                 </div>
 
             </div>

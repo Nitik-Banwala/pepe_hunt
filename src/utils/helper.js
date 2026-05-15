@@ -122,73 +122,22 @@ export const IMAGES = [
 export const PEPE_HUNT_CONTENT = [
     {
         id: 1,
-        content: (
-            <>
-                This is not your fly-by overnight no-utility meme token.
-                <br />
-                This is <span className="font-bold">Pepe Hunt</span>; the world’s
-                first ever live-streamed, real-frog
-                <br />
-                betting platform powered by DeFi. Pepe Hunt blends the
-                <br />
-                cryptocurrency meme culture with fun-loving chaos. Real frogs
-                <br />
-                are placed in front of a camera, bets are taken, and a bug is
-                <br />
-                placed in the center. The first frog to eat it, and the individuals
-                <br />
-                who bet on it will win the pot.
-            </>
-        ),
+        content: `This is not your fly-by overnight no-utility meme token.\nThis is Pepe Hunt; the world’s first ever live-streamed, real-frog\nbetting platform powered by DeFi. Pepe Hunt blends the\ncryptocurrency meme culture with fun-loving chaos. Real frogs\nare placed in front of a camera, bets are taken, and a bug is\nplaced in the center. The first frog to eat it, and the individuals\nwho bet on it will win the pot.`,
     },
 
     {
         id: 2,
-        content: (
-            <>
-                The result? Every match is unrepeatable, unriggable, and
-                <br />
-                endlessly shareable. This innovation doesn’t just make for thrilling
-                <br />
-                entertainment; it creates a viral engine of attention that
-                <br />
-                constantly attracts new players and, in turn, new $hPEPE buyers.
-            </>
-        ),
+        content: `The result? Every match is unrepeatable, unriggable, and\nendlessly shareable. This innovation doesn’t just make for thrilling\nentertainment; it creates a viral engine of attention that\nconstantly attracts new players and, in turn, new $hPEPE buyers.`,
     },
 
     {
         id: 3,
-        content: (
-            <>
-                Holding $hPEPE makes <span className="font-bold">you</span> the house.
-                Platform revenue fuels
-                <br />
-                aggressive buyback-and-burn mechanics with over{" "}
-                <span className="font-bold">125% annual</span>
-                <br />
-                <span className="font-bold">growth</span>. Early buyers can also tap
-                into up to{" "}
-                <span className="font-bold">20x gains and up to</span>
-                <br />
-                <span className="font-bold">200% APY</span> pre-launch via staking.
-            </>
-        ),
+        content: `Holding $hPEPE makes you the house.\nPlatform revenue fuels\naggressive buyback-and-burn mechanics with over 125% annual\ngrowth. Early buyers can also tap\ninto up to 20x gains and up to\n200% APY pre-launch via staking.`,
     },
 
     {
         id: 4,
-        content: (
-            <>
-                With locked liquidity, fixed supply and a roadmap packed with
-                <br />
-                tournaments, collabs, NFT integrations and CEX listings,
-                <br />
-                <span className="font-bold">
-                    PepeHunt is built for hype and insane growth.
-                </span>
-            </>
-        ),
+        content: `With locked liquidity, fixed supply and a roadmap packed with\ntournaments, collabs, NFT integrations and CEX listings,\nPepeHunt is built for hype and insane growth.`,
     },
 ];
 export const FEATURES = [
