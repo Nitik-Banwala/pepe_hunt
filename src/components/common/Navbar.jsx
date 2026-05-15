@@ -13,32 +13,24 @@ const Navbar = () => {
                 <div className='mx-auto nav max-w-285 py-5.25 items-center w-full flex flex-row justify-between px-4 xl:px-0'>
 
                     {/* Logo */}
-                    <div className='flex items-center gap-1.5 flex-row'>
-                        <Link href="#">
+                    <Link href="#">
+                        <div className='flex items-center gap-1.5 flex-row'>
+
                             <Image
                                 src={'/assets/png/nav.png'}
                                 width={74}
                                 height={54}
                                 alt='logo' />
-                        </Link>
-                        <Icons icon={'logo'} />
-                    </div>
+
+                            <Icons icon={'logo'} />
+                        </div>
+                    </Link>
 
                     {/* Desktop Nav */}
                     <div className='hidden md:flex flex-row items-center'>
-                        <Link href="#" className='text-yellow'>
-                            User Portal
-                        </Link>
-                        <Link href="#">
-                            <div className='w-11.25 ml-6 h-11.25 border rounded-full border-yellow flex justify-center items-center'>
-                                <Icons icon={'telegram'} />
-                            </div>
-                        </Link>
-                        <Link href="#">
-                            <div className='w-11.25 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center'>
-                                <Icons icon={'twiter'} />
-                            </div>
-                        </Link>
+                        <Link href="#" className='text-yellow mr-6'>  User Portal</Link>
+                        <Link href="#"> <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'telegram'} /></div></Link>
+                        <Link href="#"><div className='w-11.25 group hover:bg-yellow duration-500 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'twiter'} /></div> </Link>
                     </div>
 
                     {/* Hamburger Button */}
@@ -53,7 +45,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-               
+
             </div>
 
             {/* Overlay */}

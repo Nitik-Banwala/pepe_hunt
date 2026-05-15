@@ -10,7 +10,7 @@ import Social from "@/components/Social";
 import Team from "@/components/Team";
 import Tokenomics from "@/components/Tokenomics";
 import Whats from "@/components/Whats";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

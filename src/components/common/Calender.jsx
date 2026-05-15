@@ -16,7 +16,7 @@ const Calender = () => {
 
     return (
         <div className='p-px w-full lg:w-fit h-auto bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] rounded-2xl'>
-            <div className='rounded-2xl pt-8 sm:pt-10 lg:pt-12 px-4 sm:px-6 lg:px-9 pb-12 sm:pb-16 lg:pb-22.5 bg-dark w-full lg:w-[550.1px] mx-auto'>
+            <div className="rounded-2xl pt-8 sm:pt-10 bg-[url('/assets/png/strings.png')] bg-center bg-cover bg-no-repeat lg:pt-12 px-4 sm:px-6 lg:px-9 pb-12 sm:pb-16 lg:pb-22.5 bg-dark w-full lg:w-[550.1px] mx-auto">
 
                 {/* Label */}
                 <p className='text-lg inter sm:text-xl inter lg:text-2xl inter font-black tracking-widest text-white uppercase mb-6'>

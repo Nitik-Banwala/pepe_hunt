@@ -1,12 +1,13 @@
 import React from 'react'
 import Icons from './Icons'
+import Clock from './Clock'
 
 const Timer = () => {
     return (
-        <div>
+        <>
             <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] min-[1314.1px]:justify-between justify-center items-center flex flex-row flex-wrap px-5.5 max-w-360 w-full mx-auto py-6.5 gap-6 lg:gap-0'>
 
-                <h2 className='text-2xl inter font-extrabold leading-110 mr-2 uppercase text-yellow lg:ml-5.75 text-center lg:mb-4 mb-0 lg:text-left'>
+                <h2 className='text-2xl inter font-extrabold leading-110 mr-2 uppercase text-yellow lg:ml-5.75 text-center  lg:text-left'>
                     Hurry! next price increase
                 </h2>
 
@@ -20,7 +21,7 @@ const Timer = () => {
                             <p className='font-light leading-100 text-sm inter text-yellow'>Seconds</p>
                         </div>
                         <span className='font-[glo-Heavy] sm:text-custom-6xl text-4xl mt-3 sm:mt-1 text-white leading-100'>
-                            08 : 12 : 44 : 28
+                            <Clock/>
                         </span>
                     </div>
 
@@ -32,7 +33,7 @@ const Timer = () => {
 
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

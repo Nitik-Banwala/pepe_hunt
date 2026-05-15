@@ -1,16 +1,56 @@
-import React from 'react'
+"use client"
 import { FEATURES_DATA } from '@/utils/helper'
 import Icons from './common/Icons'
 import Image from 'next/image'
 import { IMAGES } from '@/utils/helper'
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+
+    const [timeLeft, setTimeLeft] = useState(0);
+
+    useEffect(() => {
+        const targetDate = new Date().getTime() + (
+            (12 * 60 * 60) +
+            (44 * 60) +
+            28
+        ) * 1000;
+
+        const timer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance <= 0) {
+                clearInterval(timer);
+                setTimeLeft(0);
+                return;
+            }
+
+            setTimeLeft(distance);
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+    const hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (timeLeft % (1000 * 60)) / 1000
+    );
+
+    const format = (value) => String(value).padStart(2, "0");
     return (
-        <div>
+        <>
             <div className='pt-16 px-4 sm:pt-20 lg:pt-[95.1px]'>
 
                 {/* Ellipse — hidden on mobile to avoid overflow */}
-                <div className='absolute left-0 md:block hidden pointer-events-none top-0'>
+                <div className='absolute left-0 z-60 md:block hidden pointer-events-none top-0'>
                     <Icons icon={'elipsone'} />
                 </div>
                 <div className='absolute md:block hidden pointer-events-none right-0 lg:block
@@ -52,11 +92,25 @@ const Hero = () => {
                             {/* Input fields */}
                             <div className='flex flex-col sm:flex-row w-full mt-7.5 justify-between gap-2.5 relative'>
                                 <div className='max-w-full sm:max-w-[228.1px] w-full'>
-                                    <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>USD You Pay</p>
+                                    <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>
+                                        USD You Pay
+                                    </p>
+
                                     <div className='items-center w-full p-3 h-[65.1px] rounded-[10px] bg-white flex flex-row justify-between'>
-                                        <p className='text-gray text-base inter leading-100 tracking-[-2%] font-semibold'>100</p>
-                                        <div className='w-15 flex flex-row gap-2 mr-3.5'>
-                                            <Image src={'/assets/png/usflag.png'} width={24} height={24} alt='flag' />
+                                        <input
+                                            type='text'
+                                            placeholder='100'
+                                            className='text-gray text-base inter leading-100 tracking-[-2%] font-semibold bg-transparent outline-none w-full placeholder:text-gray'
+                                        />
+
+                                        <div className='w-15 flex flex-row gap-2 mr-8'>
+                                            <Image
+                                                src={'/assets/png/usflag.png'}
+                                                width={24}
+                                                height={24}
+                                                alt='flag'
+                                            />
+
                                             <p className='text-base inter text-dark'>USD</p>
                                         </div>
                                     </div>
@@ -68,12 +122,26 @@ const Hero = () => {
                                 </div>
 
                                 <div className='max-w-full sm:max-w-[228.1px] w-full'>
-                                    <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>$hPepe You Get</p>
+                                    <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>
+                                        $hPepe You Get
+                                    </p>
+
                                     <div className='items-center w-full p-3 h-[65.1px] rounded-[10px] bg-white flex flex-row justify-between'>
-                                        <p className='text-gray text-base inter ml-2.5 leading-100 tracking-[-2%] font-semibold'>11,111.11</p>
+                                        <input
+                                            type='text'
+                                            placeholder='11,111.11'
+                                            className='text-gray text-base inter ml-2.5 leading-100 tracking-[-2%] font-semibold bg-transparent outline-none w-full placeholder:text-gray'
+                                        />
+
                                         <div className='w-20.5 flex flex-row gap-2'>
-                                            <Image src={'/assets/png/coin.png'} width={24} height={24} alt='flag' />
-                                            <p className='text-base inter text-dark -ml-1'>$hPEPE</p>
+                                            <Image
+                                                src={'/assets/png/coin.png'}
+                                                width={24}
+                                                height={24}
+                                                alt='flag'
+                                            />
+
+                                            <p className='text-base inter text-dark mr-6 -ml-1'>$hPEPE</p>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +185,7 @@ const Hero = () => {
                                         <div className='p-2'>
                                             <Icons icon={item.icon} />
                                         </div>
-                                        <div>
+                                        <div className=''>
                                             <h3 className='text-xs inter font- text-yellow leading-130'>{item.title}</h3>
                                             <p className='text-xs inter mt-1.25 text-yellow/80 leading-130'>{item.description}</p>
                                         </div>
@@ -162,11 +230,25 @@ const Hero = () => {
                                 {/* Input fields */}
                                 <div className='flex flex-col sm:flex-row w-full mt-7.5 justify-between gap-2.5 relative'>
                                     <div className='max-w-full sm:max-w-[228.1px] w-full'>
-                                        <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>USD You Pay</p>
+                                        <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>
+                                            USD You Pay
+                                        </p>
+
                                         <div className='items-center w-full p-3 h-[65.1px] rounded-[10px] bg-white flex flex-row justify-between'>
-                                            <p className='text-gray text-base inter leading-100 tracking-[-2%] font-semibold'>100</p>
-                                            <div className='w-15 flex flex-row gap-2 mr-3.5'>
-                                                <Image src={'/assets/png/usflag.png'} width={24} height={24} alt='flag' />
+                                            <input
+                                                type='text'
+                                                placeholder='100'
+                                                className='text-gray text-base inter leading-100 tracking-[-2%] font-semibold bg-transparent outline-none w-full placeholder:text-gray'
+                                            />
+
+                                            <div className='w-15 flex flex-row gap-2 mr-8'>
+                                                <Image
+                                                    src={'/assets/png/usflag.png'}
+                                                    width={24}
+                                                    height={24}
+                                                    alt='flag'
+                                                />
+
                                                 <p className='text-base inter text-dark'>USD</p>
                                             </div>
                                         </div>
@@ -176,12 +258,26 @@ const Hero = () => {
                                         <Icons icon={'equalicon'} />
                                     </div>
                                     <div className='max-w-full sm:max-w-[228.1px] w-full'>
-                                        <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>$hPepe You Get</p>
+                                        <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>
+                                            $hPepe You Get
+                                        </p>
+
                                         <div className='items-center w-full p-3 h-[65.1px] rounded-[10px] bg-white flex flex-row justify-between'>
-                                            <p className='text-gray text-base inter ml-2.5 leading-100 tracking-[-2%] font-semibold'>11,111.11</p>
+                                            <input
+                                                type='text'
+                                                placeholder='11,111.11'
+                                                className='text-gray text-base inter ml-2.5 leading-100 tracking-[-2%] font-semibold bg-transparent outline-none w-full placeholder:text-gray'
+                                            />
+
                                             <div className='w-20.5 flex flex-row gap-2'>
-                                                <Image src={'/assets/png/coin.png'} width={24} height={24} alt='flag' />
-                                                <p className='text-base inter text-dark -ml-1'>$hPEPE</p>
+                                                <Image
+                                                    src={'/assets/png/coin.png'}
+                                                    width={24}
+                                                    height={24}
+                                                    alt='flag'
+                                                />
+
+                                                <p className='text-base inter text-dark mr-6 -ml-1'>$hPEPE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -220,18 +316,32 @@ const Hero = () => {
                 {/* Countdown banner */}
 
             </div>
-             <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[243.1px] mx-auto mt-8 lg:mt-0'>
-                    <div className='max-w-360 mx-auto'>
-                        <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>Hurry! next price increase</h2>
-                        <div className='text-center max-w-[300.1px] flex flex-row justify-between mx-auto mt-7.5'>
-                            <span className='font-light text-sm inter leading-100 text-yellow'>Hours</span>
-                            <span className='font-light text-sm inter leading-100 text-yellow'>Minutes</span>
-                            <span className='font-light text-sm inter leading-100 text-yellow'>Seconds</span>
-                        </div>
-                        <p className='font-light text-5xl sm:text-custom-7xl font-[glo-Heavy] text-center max-w-[348.1px] w-full mx-auto leading-100 mt-3 text-yellow'>12 : 44 : 28</p>
+            <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[234.1px] mx-auto mt-8 lg:mt-0'>
+                <div className='max-w-360 mx-auto'>
+                    <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>
+                        Hurry! next price increase
+                    </h2>
+
+                    <div className='text-center max-w-[300.1px] flex flex-row justify-between mx-auto mt-7.25'>
+                        <span className='font-light text-sm inter leading-100 text-yellow'>
+                            Hours
+                        </span>
+
+                        <span className='font-light text-sm inter leading-100 text-yellow'>
+                            Minutes
+                        </span>
+
+                        <span className='font-light text-sm inter leading-100 text-yellow'>
+                            Seconds
+                        </span>
                     </div>
+
+                    <p className='font-light text-5xl sm:text-custom-7xl font-[glo-Heavy] text-center max-w-[348.1px] w-full mx-auto leading-100 mt-3 text-yellow'>
+                        {format(hours)} : {format(minutes)} : {format(seconds)}
+                    </p>
                 </div>
-        </div>
+            </div>
+        </>
     )
 }
 

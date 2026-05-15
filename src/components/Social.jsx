@@ -45,7 +45,7 @@ const Social = () => {
                                             className="h-12.75 w-12.75 rounded-full object-cover"
                                         />
 
-                                        <div>
+                                        <div className=" flex flex-col">
                                             <div className="flex items-center gap-1">
                                                 <h3 className="text-base inter sm:text-lg leading-100 tracking-[-0.51px] text-yellow font-bold">
                                                     {item.name}
@@ -83,7 +83,7 @@ const Social = () => {
                             </div>
 
                             {/* Image */}
-                            <div>
+                            <div className="flex flex-col">
                                 <div className="overflow-hidden">
                                     <Image
                                         src={item.image}

@@ -33,14 +33,23 @@ const Icons = ({ icon }) => {
 
         ),
         telegram: (
-            <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.977 0.147549C25.8934 0.0752599 25.7915 0.0272216 25.6826 0.00863172C25.5736 -0.00995814 25.4616 0.00160857 25.3587 0.0420802L0.790625 9.65669C0.540174 9.75391 0.328109 9.9299 0.186393 10.1581C0.0446768 10.3864 -0.0190104 10.6545 0.00493036 10.9221C0.0288711 11.1897 0.139142 11.4422 0.319124 11.6417C0.499105 11.8411 0.739043 11.9767 1.00277 12.0279L7.76003 13.3542V20.8509C7.75999 21.1409 7.84665 21.4244 8.00888 21.6648C8.1711 21.9052 8.40149 22.0917 8.67046 22.2002C8.84354 22.2696 9.02828 22.3054 9.21477 22.3056C9.40998 22.3052 9.6031 22.2655 9.78262 22.1888C9.96215 22.1122 10.1244 22.0002 10.2598 21.8595L13.6542 18.3439L18.867 22.9154C19.1312 23.1485 19.4711 23.2777 19.8235 23.2791C19.9773 23.2784 20.1302 23.2543 20.2768 23.2076C20.5168 23.1316 20.7327 22.994 20.9029 22.8085C21.0731 22.623 21.1916 22.3961 21.2467 22.1505L26.171 0.741567C26.1956 0.634274 26.1906 0.52229 26.1564 0.417636C26.1223 0.312983 26.0602 0.219613 25.977 0.147549ZM0.971255 10.835C0.964144 10.7764 0.977354 10.7171 1.00868 10.667C1.04001 10.6169 1.08756 10.5791 1.1434 10.5598L22.3159 2.27389L8.13221 12.4389L1.19068 11.0763C1.13184 11.0677 1.07781 11.0389 1.0378 10.9949C0.997792 10.9509 0.974274 10.8944 0.971255 10.835ZM9.5627 21.1855C9.49566 21.2546 9.40958 21.3021 9.31543 21.3221C9.22127 21.3421 9.12331 21.3336 9.03399 21.2977C8.94468 21.2618 8.86807 21.2002 8.81391 21.1206C8.75975 21.041 8.73049 20.9471 8.72986 20.8509V14.0258L12.9219 17.699L9.5627 21.1855ZM20.3011 21.9298C20.2823 22.0122 20.2424 22.0882 20.1853 22.1503C20.1281 22.2125 20.0557 22.2586 19.9753 22.2842C19.8948 22.3098 19.8091 22.314 19.7265 22.2962C19.644 22.2785 19.5675 22.2396 19.5046 22.1832L9.02444 12.9929L24.9902 1.55137L20.3011 21.9298Z" fill="#FCF3D0" />
-            </svg>
-
+            <svg
+    className='group-hover:[&>path]:fill-dark'
+    width="27"
+    height="24"
+    viewBox="0 0 27 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+        d="M25.977 0.147549C25.8934 0.0752599 25.7915 0.0272216 25.6826 0.00863172C25.5736 -0.00995814 25.4616 0.00160857 25.3587 0.0420802L0.790625 9.65669C0.540174 9.75391 0.328109 9.9299 0.186393 10.1581C0.0446768 10.3864 -0.0190104 10.6545 0.00493036 10.9221C0.0288711 11.1897 0.139142 11.4422 0.319124 11.6417C0.499105 11.8411 0.739043 11.9767 1.00277 12.0279L7.76003 13.3542V20.8509C7.75999 21.1409 7.84665 21.4244 8.00888 21.6648C8.1711 21.9052 8.40149 22.0917 8.67046 22.2002C8.84354 22.2696 9.02828 22.3054 9.21477 22.3056C9.40998 22.3052 9.6031 22.2655 9.78262 22.1888C9.96215 22.1122 10.1244 22.0002 10.2598 21.8595L13.6542 18.3439L18.867 22.9154C19.1312 23.1485 19.4711 23.2777 19.8235 23.2791C19.9773 23.2784 20.1302 23.2543 20.2768 23.2076C20.5168 23.1316 20.7327 22.994 20.9029 22.8085C21.0731 22.623 21.1916 22.3961 21.2467 22.1505L26.171 0.741567C26.1956 0.634274 26.1906 0.52229 26.1564 0.417636C26.1223 0.312983 26.0602 0.219613 25.977 0.147549ZM0.971255 10.835C0.964144 10.7764 0.977354 10.7171 1.00868 10.667C1.04001 10.6169 1.08756 10.5791 1.1434 10.5598L22.3159 2.27389L8.13221 12.4389L1.19068 11.0763C1.13184 11.0677 1.07781 11.0389 1.0378 10.9949C0.997792 10.9509 0.974274 10.8944 0.971255 10.835ZM9.5627 21.1855C9.49566 21.2546 9.40958 21.3021 9.31543 21.3221C9.22127 21.3421 9.12331 21.3336 9.03399 21.2977C8.94468 21.2618 8.86807 21.2002 8.81391 21.1206C8.75975 21.041 8.73049 20.9471 8.72986 20.8509V14.0258L12.9219 17.699L9.5627 21.1855ZM20.3011 21.9298C20.2823 22.0122 20.2424 22.0882 20.1853 22.1503C20.1281 22.2125 20.0557 22.2586 19.9753 22.2842C19.8948 22.3098 19.8091 22.314 19.7265 22.2962C19.644 22.2785 19.5675 22.2396 19.5046 22.1832L9.02444 12.9929L24.9902 1.55137L20.3011 21.9298Z"
+        fill="#FCF3D0"
+    />
+</svg>
         ),
         twiter: (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.9047 8.46961L19.3513 0H17.5873L11.1187 7.35254L5.956 0H0L7.80867 11.1194L0 20H1.764L8.59067 12.2338L14.044 20H20M2.40067 1.30158H5.11067L17.586 18.7624H14.8753" fill="#FCF3D0" />
+                <path d="M11.9047 8.46961L19.3513 0H17.5873L11.1187 7.35254L5.956 0H0L7.80867 11.1194L0 20H1.764L8.59067 12.2338L14.044 20H20M2.40067 1.30158H5.11067L17.586 18.7624H14.8753" fill="#FCF3D0" className="group-hover:fill-dark" />
             </svg>
 
         ),
@@ -75,11 +84,11 @@ const Icons = ({ icon }) => {
         elipsthree: (
             <svg width="689" height="1147" viewBox="0 0 689 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2089)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2089" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2089" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2089" />
                     </filter>
@@ -89,11 +98,11 @@ const Icons = ({ icon }) => {
         elipsfour: (
             <svg width="661" height="1147" viewBox="0 0 661 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2101)">
-                    <circle cx="87.2969" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="87.2969" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2101" x="-486.203" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2101" x="-486.203" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2101" />
                     </filter>
@@ -103,11 +112,11 @@ const Icons = ({ icon }) => {
         elipsfive: (
             <svg width="586" height="1147" viewBox="0 0 586 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2090)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2090" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2090" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2090" />
                     </filter>
@@ -117,11 +126,11 @@ const Icons = ({ icon }) => {
         elipssix: (
             <svg width="654" height="1147" viewBox="0 0 654 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2099)">
-                    <circle cx="79.8359" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="79.8359" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2099" x="-493.664" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2099" x="-493.664" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2099" />
                     </filter>
@@ -131,11 +140,11 @@ const Icons = ({ icon }) => {
         elipsseven: (
             <svg width="613" height="1147" viewBox="0 0 613 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2100)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2100" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2100" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2100" />
                     </filter>
@@ -145,11 +154,11 @@ const Icons = ({ icon }) => {
         elipseight: (
             <svg width="586" height="1147" viewBox="0 0 586 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2091)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2091" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2091" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2091" />
                     </filter>
@@ -159,11 +168,11 @@ const Icons = ({ icon }) => {
         elipsnine: (
             <svg width="654" height="1147" viewBox="0 0 654 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2098)">
-                    <circle cx="79.8359" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="79.8359" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2098" x="-493.664" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2098" x="-493.664" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2098" />
                     </filter>
@@ -173,11 +182,11 @@ const Icons = ({ icon }) => {
         elipsten: (
             <svg width="586" height="1147" viewBox="0 0 586 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2092)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2092" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2092" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2092" />
                     </filter>
@@ -187,11 +196,11 @@ const Icons = ({ icon }) => {
         elipseliven: (
             <svg width="700" height="847" viewBox="0 0 700 847" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2097)">
-                    <circle cx="125.566" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="125.566" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2097" x="-447.934" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2097" x="-447.934" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2097" />
                     </filter>
@@ -201,11 +210,11 @@ const Icons = ({ icon }) => {
         elipstwelve: (
             <svg width="586" height="847" viewBox="0 0 586 847" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.4" filter="url(#filter0_f_2984_2093)">
-                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fill-opacity="0.5" />
+                    <circle cx="573.5" cy="573.5" r="273.5" fill="#FF7590" fillOpacity="0.5" />
                 </g>
                 <defs>
-                    <filter id="filter0_f_2984_2093" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_f_2984_2093" x="0" y="0" width="1147" height="1147" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2984_2093" />
                     </filter>
@@ -824,10 +833,10 @@ const Icons = ({ icon }) => {
         ),
         equalicon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.50001 9.00999L8.51001 3.98999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.5 9.01001L3.5 9.01001" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.5 14.99L15.49 20.01" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3.5 14.99L20.5 14.99" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3.50001 9.00999L8.51001 3.98999" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M20.5 9.01001L3.5 9.01001" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M20.5 14.99L15.49 20.01" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M3.5 14.99L20.5 14.99" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
 
 

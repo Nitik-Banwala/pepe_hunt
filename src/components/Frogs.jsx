@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Frogs = () => {
     return (
-        <div>
+        <>
             <div className='bg-light-green pt-14 sm:pt-20 lg:pt-28.5 mt-16 sm:mt-24 px-4 lg:mt-32.5 max-w-360 w-full mx-auto relative overflow-hidden'>
 
                 {/* Frog: hidden on mobile/tablet, shown absolutely on desktop */}
-                <div className='hidden lg:block absolute translate-y-[-10%] translate-x-[123%]'>
+                <div className='hidden lg:block absolute translate-y-[-15%] translate-x-[123%]'>
                     <Image
                         src={'/assets/png/frog.png'}
                         width={647}
@@ -37,10 +37,9 @@ const Frogs = () => {
                         />
                     </div>
                 </div>
-
-                <div className='-ml-5 hidden lg:block'>
+                  <div className='-ml-5 hidden lg:block'>
                     <Image
-                        src={'/assets/png/pepe.png'}
+                        src={'/assets/png/frogpepe.png'}
                         width={1329}
                         height={388}
                         alt='pepe2'
@@ -57,7 +56,7 @@ const Frogs = () => {
                     />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -5,7 +5,7 @@ import Icons from './common/Icons'
 
 const Headlines = () => {
     return (
-        <div>
+        <>
              <div className='absolute right-0 mt-20'>
                 <Icons icon={'elipseight'} />
             </div>
@@ -40,7 +40,7 @@ const Headlines = () => {
              <div className='absolute md:block hidden pointer-events-none right-0 mt-20'>
                 <Icons icon={'elipsten'} />
             </div>
-        </div>
+        </>
     )
 }
 

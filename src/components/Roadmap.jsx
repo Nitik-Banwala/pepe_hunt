@@ -5,7 +5,7 @@ import Icons from './common/Icons'
 
 const Roadmap = () => {
     return (
-        <section className='bg-[#16003D] pt-[268.1px] pb-[92.1px] px-4 overflow-hidden'>
+        <section className='bg-[#16003D] pt-[268.1px] px-4 overflow-hidden'>
             <div className='absolute left-0 md:block hidden pointer-events-none -mt-180'>
                 <Icons icon={'elipssix'} />
             </div>
@@ -21,7 +21,7 @@ const Roadmap = () => {
                     {ROADMAP_DATA.map((phase, index) => (
                         <React.Fragment key={phase.id}>
 
-                            <div>
+                            <div className='flex flex-col'>
 
                                 <div className=' min-[997.1px]:w-[172.1px] w-full h-[80.1px] rounded-xl border border-dashed border-white/20 bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] flex items-center justify-center mb-[46.1px]'>
                                     <p className='text-yellow text-[27px] font-black leading-100 uppercase'>
