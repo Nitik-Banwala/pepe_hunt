@@ -24,7 +24,7 @@ const Roadmap = () => {
                             <div className='flex flex-col'>
 
                                 <div className=' min-[997.1px]:w-[172.1px] w-full h-[80.1px] rounded-xl border border-dashed border-white/20 bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] flex items-center justify-center mb-[46.1px]'>
-                                    <p className='text-yellow text-[27px] font-black leading-100 uppercase'>
+                                    <p className='text-yellow text-xl inter font-black leading-164 uppercase'>
                                         {phase.phase}
                                     </p>
                                 </div>

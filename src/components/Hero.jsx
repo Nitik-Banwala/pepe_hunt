@@ -148,7 +148,7 @@ const Hero = () => {
                             </div>
 
                             {/* CTA button */}
-                            <button className='group bg-light-green mt-7.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-full max-w-[467.1px] h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
+                            <button className='group inter leading-100 font-medium bg-light-green mt-7.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-full max-w-[467.1px] h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
                                 Proceed to Checkout<Icons icon={'btnarrow'} />
                             </button>
 
@@ -284,7 +284,7 @@ const Hero = () => {
                                 </div>
 
                                 {/* CTA button */}
-                                <button className='group bg-light-green mt-7.5 mr-0.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-[467.1px]  h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
+                                <button className='group inter leading-100 font-medium bg-light-green mt-7.5 mr-0.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-[467.1px]  h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
                                     Proceed to Checkout<Icons icon={'btnarrow'} />
                                 </button>
 

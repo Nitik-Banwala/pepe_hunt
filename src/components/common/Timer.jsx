@@ -26,7 +26,7 @@ const Timer = () => {
                     </div>
 
                     <div className='w-full sm:w-auto flex justify-center'>
-                        <button className='group bg-light-green text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-[467.1px] max-w-full h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
+                        <button className='group bg-light-green inter leading-100 font-medium text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-[467.1px] max-w-full h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
                             Buy Now<Icons icon={'btnarrow'} />
                         </button>
                     </div>

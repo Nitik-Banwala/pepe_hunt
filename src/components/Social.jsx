@@ -95,23 +95,23 @@ const Social = () => {
                                 </div>
 
                                 {/* Bottom */}
-                                <div className="mt-2.25 sm:mt-3.5 flex flex-col items-start justify-center">
+                                <div className="mt-2.25 sm:mt-3.5 text-base font-medium leading-100 inter flex flex-col items-start justify-center">
                                     <p>{item.time}</p>
 
                                     <div className="w-full border-[0.48px] border-yellow mt-3 sm:mt-3.25"></div>
 
                                     <div className="mt-3.5 flex items-center justify-between w-full">
-                                        <span className="flex items-center gap-[4.46px]">
+                                        <span className="flex inter text-xs font-normal leading-100 items-center gap-[4.46px]">
                                             <Icons icon={'message'} />
                                             {item.likes}
                                         </span>
 
-                                        <span className="flex items-center gap-[4.46px]">
+                                        <span className="flex inter text-xs font-normal leading-100 items-center gap-[4.46px]">
                                             <Icons icon={'reshare'} />
                                             {item.retweets}
                                         </span>
 
-                                        <span className="flex items-center gap-[4.46px]">
+                                        <span className="flex inter text-xs font-normal leading-100 items-center gap-[4.46px]">
                                             <Icons icon={'like'} />
                                             {item.comments}
                                         </span>
