@@ -37,8 +37,8 @@ const Calender = () => {
 
                 {/* Range Labels */}
                 <div className='flex justify-between mb-6 max-w-full sm:max-w-[318.1px] w-full mx-auto'>
-                    <span className='text-sm inter sm:text-base inter text-[#9299B5]'>$100</span>
-                    <span className='text-sm inter sm:text-base inter text-[#9299B5]'>$150,000</span>
+                    <span className='text-sm sm:text-base poppins text-[#9299B5]'>$100</span>
+                    <span className='text-sm sm:text-base poppins text-[#9299B5]'>$150,000</span>
                 </div>
 
                 {/* Tokens Burned */}

@@ -6,12 +6,10 @@ import Icons from './common/Icons'
 const Roadmap = () => {
     return (
         <section className='bg-[#16003D] pt-[268.1px] pb-[92.1px] px-4 overflow-hidden'>
-             <div className='absolute left-0 md:block hidden pointer-events-none -mt-100'>
+            <div className='absolute left-0 md:block hidden pointer-events-none -mt-180'>
                 <Icons icon={'elipssix'} />
-            </div> 
-            <div className='absolute right-0 md:block hidden pointer-events-none -mt-100'>
-                <Icons icon={'elipsseven'} />
             </div>
+
             <div className='max-w-285 mx-auto w-full'>
 
                 <h2 className='text-yellow data-aos="fade-up" text-center text-5xl font-[glo-Heavy] leading-100 uppercase mb-[92.1px]'>
@@ -34,16 +32,18 @@ const Roadmap = () => {
                                 <div className='flex items-center gap-[15.1px] mb-[34.1px] relative'>
 
                                     {/* Blur effect */}
-                                    <span
-                                        className='absolute left-0 w-2 h-[42.1px] rounded-full blur-[8.1px] opacity-70'
-                                        style={{
-                                            backgroundColor: phase.borderColor,
-                                        }}
-                                    />
+                                    {(index === 1 || index === 2) && (
+                                        <span
+                                            className='absolute left-0 w-4 h-[34.1px] rounded-full blur-[3.1px] opacity-15'
+                                            style={{
+                                                backgroundColor: phase.borderColor,
+                                            }}
+                                        />
+                                    )}
 
                                     {/* Main border line */}
                                     <span
-                                        className='w-1 h-[42.1px] rounded-full relative z-10'
+                                        className='w-0.5 h-[33.1px] rounded-full relative z-10'
                                         style={{
                                             backgroundColor: phase.borderColor,
                                         }}

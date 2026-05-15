@@ -16,7 +16,7 @@ const Whats = () => {
                             width={72}
                             height={52}
                             alt='logo'
-                            className='w-12 sm:w-16 lg:w-[72.1px] h-auto' />
+                            className='w-12 sm:w-16 lg:w-[72.1px] mx-3 h-auto' />
                         <h2 className='text-center leading-110 uppercase font-[glo-Heavy] text-3xl sm:text-4xl lg:text-5xl text-dark-yellow'>PEPE HUNT?</h2>
                     </div>
                     <div className="max-w-full lg:max-w-[600.1px]">

@@ -10,9 +10,9 @@ const Hero = () => {
             <div className='pt-16 px-4 sm:pt-20 lg:pt-[95.1px]'>
 
                 {/* Ellipse — hidden on mobile to avoid overflow */}
-                 <div className='absolute left-0 md:block hidden pointer-events-none top-0'>
-                                    <Icons icon={'elipsone'} />
-                                </div>
+                <div className='absolute left-0 md:block hidden pointer-events-none top-0'>
+                    <Icons icon={'elipsone'} />
+                </div>
                 <div className='absolute md:block hidden pointer-events-none right-0 lg:block
                  data-aos="fade-left"
                 data-aos-duration="1200'>
@@ -66,7 +66,7 @@ const Hero = () => {
                                 <div className='hidden sm:flex absolute translate-x-[463%] translate-y-[64%]'>
                                     <Icons icon={'equal'} />
                                 </div>
- 
+
                                 <div className='max-w-full sm:max-w-[228.1px] w-full'>
                                     <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>$hPepe You Get</p>
                                     <div className='items-center w-full p-3 h-[65.1px] rounded-[10px] bg-white flex flex-row justify-between'>
@@ -152,7 +152,7 @@ const Hero = () => {
                                 <p className='text-yellow max-w-[449.1px] text-sm inter leading-144 mt-5'>You'll be directed to a secure checkout page where you can finalize your purchase using a variety of major cryptocurrencies.</p>
 
                                 {/* Progress bar */}
-                                <div className='flex mt-6 flex-row w-full max-w-108 justify-between items-center flex-wrap gap-2'>
+                                <div className='flex mt-6 flex-row w-full max-w-108 cursor-pointer justify-between items-center flex-wrap gap-2'>
                                     <div className='bg-white rounded-[63px] w-full h-4 max-w-[243.1px]'>
                                         <div className='h-4 rounded-[63px] w-[130.1px] bg-light-blue'></div>
                                     </div>
@@ -172,8 +172,8 @@ const Hero = () => {
                                         </div>
                                     </div>
 
-                                    <div className='hidden sm:flex absolute translate-x-[463%] translate-y-[64%]'>
-                                        <Icons icon={'equal'} />
+                                    <div className='hidden sm:flex absolute w-11 cursor-pointer h-11 bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] items-center justify-center rounded-full translate-x-[481%] translate-y-[64%]'>
+                                        <Icons icon={'equalicon'} />
                                     </div>
                                     <div className='max-w-full sm:max-w-[228.1px] w-full'>
                                         <p className='leading-100 text-start ml-2 mb-1.25 text-xs inter font-medium text-yellow'>$hPepe You Get</p>
@@ -188,7 +188,7 @@ const Hero = () => {
                                 </div>
 
                                 {/* CTA button */}
-                                <button className='group bg-light-green mt-7.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-full max-w-[467.1px] h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
+                                <button className='group bg-light-green mt-7.5 mr-0.5 text-white justify-center cursor-pointer items-center gap-1 rounded-lg hover:text-light-green w-[467.1px]  h-14 flex flex-row hover:bg-white duration-500 active:text-white active:bg-light-green'>
                                     Proceed to Checkout<Icons icon={'btnarrow'} />
                                 </button>
 
@@ -199,10 +199,10 @@ const Hero = () => {
                                     <p className='text-base inter font-bold leading-120 text-yellow'>Commerce</p>
                                 </div>
                                 <p className='leading-183 text-xs inter font-medium mt-1 text-yellow'>10+ Payment Methods Accepted:</p>
-                                <div className='flex flex-row mt-1.5 max-w-55 mx-auto gap-2.25 flex-wrap justify-center'>
+                                <div className='flex flex-row mt-1.25 cursor-pointer max-w-55 mx-auto gap-2.25 flex-wrap justify-center'>
                                     {IMAGES.map((item, index) => (
                                         <div key={index} className='w-[36.1px] h-[38.1px] bg-yellow rounded-[5px] flex justify-center items-center'>
-                                            <Image src={item.image} width={27} height={27} alt='coins'  className='w-6 h-6'/>
+                                            <Image src={item.image} width={27} height={27} alt='coins' className='w-6 h-6' />
                                         </div>
                                     ))}
                                 </div>
@@ -210,25 +210,27 @@ const Hero = () => {
                         </div>
 
                         {/* Whitepaper */}
-                        <div className='flex flex-row items-center justify-center mt-4.5 rounded-lg border border-yellow w-50 h-12 mx-auto'>
-                            <p className='text-white font-medium font-base leading-100'>Whitepaper</p>
+                        <div className='flex flex-row items-center justify-center cursor-pointer mt-4.5 rounded-lg border border-yellow w-50 h-12 mx-auto'>
+                            <p className='text-white font-medium font-base mr-3.5 leading-100'>Whitepaper</p>
                             <Icons icon={'page'} />
                         </div>
                     </div>
                 </div>
 
                 {/* Countdown banner */}
-                <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 max-w-360 w-full min-h-[243.1px] mx-auto mt-8 lg:mt-0'>
-                    <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>Hurry! next price increase</h2>
-                    <div className='text-center max-w-[300.1px] flex flex-row justify-between mx-auto mt-7.5'>
-                        <span className='font-light text-sm inter leading-100 text-yellow'>Hours</span>
-                        <span className='font-light text-sm inter leading-100 text-yellow'>Minutes</span>
-                        <span className='font-light text-sm inter leading-100 text-yellow'>Seconds</span>
-                    </div>
-                    <p className='font-light text-5xl sm:text-custom-7xl font-[glo-Heavy] text-center max-w-[348.1px] w-full mx-auto leading-100 mt-3 text-yellow'>12 : 44 : 28</p>
-                </div>
 
             </div>
+             <div className='bg-[linear-gradient(90deg,#4020C1_0%,#8432D6_100%)] py-8.75 w-full min-h-[243.1px] mx-auto mt-8 lg:mt-0'>
+                    <div className='max-w-360 mx-auto'>
+                        <h2 className='text-yellow text-xl inter sm:text-2xl inter font-extrabold leading-110 uppercase text-center'>Hurry! next price increase</h2>
+                        <div className='text-center max-w-[300.1px] flex flex-row justify-between mx-auto mt-7.5'>
+                            <span className='font-light text-sm inter leading-100 text-yellow'>Hours</span>
+                            <span className='font-light text-sm inter leading-100 text-yellow'>Minutes</span>
+                            <span className='font-light text-sm inter leading-100 text-yellow'>Seconds</span>
+                        </div>
+                        <p className='font-light text-5xl sm:text-custom-7xl font-[glo-Heavy] text-center max-w-[348.1px] w-full mx-auto leading-100 mt-3 text-yellow'>12 : 44 : 28</p>
+                    </div>
+                </div>
         </div>
     )
 }
