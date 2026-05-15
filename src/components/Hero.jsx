@@ -162,7 +162,7 @@ const Hero = () => {
                             <div className='flex mb-4 flex-row mt-1.5 max-w-55 mx-auto gap-2.25 flex-wrap justify-center'>
                                 {IMAGES.map((item, index) => (
                                     <div key={index} className='w-[36.1px] h-[38.1px] bg-yellow rounded-[5px] flex justify-center items-center'>
-                                        <Image src={item.image} width={27} height={27} alt='coins' />
+                                        <Image src={item.image} width={27} height={27} alt='coins' className=' w-6 h-6'/>
                                     </div>
                                 ))}
                             </div>
@@ -171,7 +171,7 @@ const Hero = () => {
 
                     {/* Whitepaper */}
                     <div className='flex flex-row items-center justify-center mt-4.5 rounded-lg border border-yellow w-50 h-12 mx-auto'>
-                        <p className='text-white font-medium font-base leading-100'>Whitepaper</p>
+                        <p className='text-yellow font-medium font-base mr-3 inter leading-100'>Whitepaper</p>
                         <Icons icon={'page'} />
                     </div>
                 </div>
@@ -307,7 +307,7 @@ const Hero = () => {
 
                         {/* Whitepaper */}
                         <div className='flex flex-row items-center justify-center cursor-pointer mt-4.5 rounded-lg border border-yellow w-50 h-12 mx-auto'>
-                            <p className='text-white font-medium font-base mr-3.5 leading-100'>Whitepaper</p>
+                            <p className='text-yellow font-medium inter font-base mr-3.5 leading-100'>Whitepaper</p>
                             <Icons icon={'page'} />
                         </div>
                     </div>

@@ -27,7 +27,7 @@ const Navbar = () => {
 
                     {/* Desktop Nav */}
                     <div className='hidden md:flex flex-row items-center'>
-                        <Link href="#" className='text-yellow mr-6'>  User Portal</Link>
+                        <Link href="#" className='text-yellow mr-6 leading-80 text-base inter font-medium'>  User Portal</Link>
                         <Link href="#"> <div className='w-11.25 h-11.25 group hover:bg-yellow duration-500 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'telegram'} /></div></Link>
                         <Link href="#"><div className='w-11.25 group hover:bg-yellow duration-500 ml-5 h-11.25 border rounded-full border-yellow flex justify-center items-center'><Icons icon={'twiter'} /></div> </Link>
                     </div>
